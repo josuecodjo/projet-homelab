@@ -32,6 +32,8 @@ ansible-playbook -i hosts_global playbook.yml -l stormy
 ansible-playbook -i hosts_global playbook.yml -l stormy -t {k3s-traefik, k3s-neutral, argocd, awx, certmanager}
 ```
 
+- If you don't pass any tags it will install `k3s-traefik`,`argocd` and `certmanager`
+
 
 ### Tips
 - `kubectl expose deployment awx-web --type=NodePort --port=8052 --name=awx-nodeport -n awx`

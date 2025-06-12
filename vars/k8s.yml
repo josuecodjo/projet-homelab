@@ -1,0 +1,18 @@
+---
+# Global configs
+global_dns_name: home.lab
+
+# Acme mode
+acme_mode: Local
+
+# AWX Config
+awx_hostname: awx
+admin_password: mySuperPass
+postgres_storage: 8Gi
+web_replicas: 1
+task_replicas: 1
+postgres_password: awxpostgrespass
+awx_projects_storage: 2Gi
+
+# ArgoCD
+argocd_hostname: argocd

@@ -1,0 +1,5 @@
+collections:
+  - name: awx.awx
+    version: 24.5.0
+  - name: kubernetes.core
+    version: 5.1.0

@@ -1,0 +1,7 @@
+---
+### with https
+
+- src: https://github.com/josuecodjo/role-kube_init.git
+  name: role-kube_init
+  scm: git
+  version: main

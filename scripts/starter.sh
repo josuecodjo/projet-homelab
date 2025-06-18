@@ -67,7 +67,7 @@ alias mpk='multipass launch -n awx -c 2 -m 8G -d 20G noble'
 alias mps='multipass shell'
 
 # pyenv
-alias venv='python3 -m venv .venv && pip install -r requirements.txt'
+alias venv='python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt'
 alias activate='source .venv/bin/activate'
 
 EOF

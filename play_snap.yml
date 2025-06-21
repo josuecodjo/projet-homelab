@@ -1,0 +1,20 @@
+---
+- name: Check Ubuntu snap Status
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Check snap packages
+      ansible.builtin.shell: snap list {{ item }}
+      register: snap_check
+      changed_when: false
+      failed_when: false
+      loop:
+        - core20
+        - core22
+        - core26
+
+    - name: Show result
+      ansible.builtin.debug:
+        msg: "{{ item.item }} is installed"
+      loop: "{{ snap_check.results }}"
+      when: item.rc == 0

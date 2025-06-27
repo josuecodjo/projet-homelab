@@ -42,5 +42,6 @@ ansible-playbook -i hosts_global playbook.yml -l stormy -t {k3s-traefik, k3s-neu
 ### Install my homelabstarter
 
 ```
+sudo apt install git python3 python3-pip python3-venv curl -y
 ./scripts/starter.sh
 ```

@@ -38,3 +38,9 @@ ansible-playbook -i hosts_global playbook.yml -l stormy -t {k3s-traefik, k3s-neu
 ### Tips
 - `kubectl expose deployment awx-web --type=NodePort --port=8052 --name=awx-nodeport -n awx`
 - Sometimes, the certificate request is not there anymore for cert-manager. In this case delete the secret related to the certificate secret with `kubectl delete secret awx.home.lab -n awx` and the certificaterquest will appear `kubectl get issuer -n awx  && kubectl get certificate -n awx && kubectl get certificaterequest -n awx`
+
+### Install my homelabstarter
+
+```
+./scripts/starter.sh
+```

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-PROFILE_FILE="$HOME/.bashrc"
-
 echo "========================== Udpdate and Figlet =========================="
 sudo apt update
 
@@ -39,6 +37,7 @@ sed -i 's/OSH_THEME="font"/OSH_THEME="agnoster"/g' "$HOME/.bashrc"
 echo "=========================================================================="
 
 # Define the aliases
+PROFILE_FILE="$HOME/.bashrc"
 ALIASES=$(cat << 'EOF'
 # Custom Aliases
 # Add these to the end of your ~/.bashrc or ~/.zshrc

@@ -30,6 +30,9 @@ ansible-galaxy install --ignore-errors  -r roles/requirements.yml --roles-path r
 ansible-playbook -i hosts_global playbook.yml
 ansible-playbook -i hosts_global playbook.yml -l stormy
 ansible-playbook -i hosts_global playbook.yml -l stormy -t {k3s-traefik, k3s-neutral, argocd, awx, certmanager}
+ansible-playbook -i hosts_global playbook.yml -l stormy -t awxconfig
+ansible-playbook -i hosts_global playbook.yml -l stormy -t awxconfig-projet
+ansible-playbook -i hosts_global playbook.yml -l stormy -t awxconfig-ee
 ```
 
 - If you don't pass any tags it will install `k3s-traefik`,`argocd` and `certmanager`

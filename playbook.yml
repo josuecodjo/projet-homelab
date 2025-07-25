@@ -13,3 +13,4 @@
 
   roles:
     - role: role-kube_init
+    - role: role-awxconfig

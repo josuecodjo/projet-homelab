@@ -5,3 +5,8 @@
   name: role-kube_init
   scm: git
   version: main
+
+- src: https://github.com/josuecodjo/role-awxconfig.git
+  name: role-awxconfig
+  scm: git
+  version: main
